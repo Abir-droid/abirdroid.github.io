@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogtest Final 1</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <div class="headerleft">
+            <a href="#default"><img class="logo" src="Screenshot 2023-09-26 114200.png" alt="#image"></a>
+           <div><a class="logoname">Blog Test 1</a></div>
+        </div>
+        <div class="headerright">
+            <a class="active" href="#default">Home</a>
+            <a class="hdrright" href="#default">Contact</a>
+            <a class="hdrright" href="#default">About</a>
+        </div>
+    </div>
+     <div class="blog">
+        <h1>How to updrade Windows Home to Pro for free?</h1>
+        <p>As we know that we are the powerful windows user without any money. Even if we have some, we don't want to waste
+            it on trival matters like windows upgrading. So today we are going to see how can we upgrade our Windows from Home edition to Pro.</p>
+        
+        <p>
+        <div class="image1"><img class="image1" src="Screenshot 2023-09-28 114741.png" alt="#image"></div>
+        <p>For that first we have to know what is windows Home and Pro edititon.
+            Windows Home editions are designed for home users. It includes features such as a new interface that is easier on the eyes and easier to use, wake on approach, lock on leave, smart app control, seamless redocking, live captions, natural narrator, Amazon Appstore, Windows Studio Effects, controller bar, auto HDR, widgets, sync your PC and phone, touchscreen support, and an improved search experience.<br>
+            The **Pro** edition includes all the features of the Home edition and additional functionality focused on business and security³. It includes features such as the Group Policy Editor, Remote Desktop client, BitLocker encryption, Windows Update for Business, and more.<br>
+            Here is the charted comparison of these two editions:</p>
+        </p>
+        <table cellspacing="0" cellpadding="6" border="1">
+            <tr>
+                <th>Windows Home</th>
+                <th>Windows Pro</th>
+            </tr>
+            <tr>
+                <td>1. <b>Designed for Home Users:</b> Home editions are intended for individual consumers and home users who don't require advanced business features.</td>
+                <td>1. <b>Business-Oriented Features:</b> Pro editions are designed for small to medium-sized businesses and advanced users. They offer additional features and tools that are not available in the Home editions.</td>
+            </tr>
+            <tr>
+                <td>2. <b>Simplified Interface:</b> Home editions provide a straightforward and user-friendly interface, making them suitable for personal use.
+                </td>
+                <td>2. <b>Remote Desktop:</b> Pro editions allow you to connect to your computer remotely using the Remote Desktop Protocol (RDP), which can be useful for remote administration and accessing your work computer from home.
+                </td>
+            </tr>
+            <tr>
+                <td>3. <b>Cortana:</b> Cortana, Microsoft's digital assistant, is available in Home editions for tasks like voice search and assistance.</td>
+                <td>3. <b>BitLocker:</b> BitLocker Drive Encryption is available in Pro editions, allowing you to encrypt your entire hard drive to protect your data in case your device is lost or stolen.</td>
+            </tr>
+            <tr>
+                <td>4. <b>Windows Update:</b> Home editions receive automatic updates from Windows Update, helping users stay up to date with the latest security and feature updates.</td>
+                <td>4. <b>Domain Join:</b> Pro editions support domain joining, which is essential for businesses that use Active Directory domains for centralized management of users and devices.</td>
+            </tr>
+            <tr>
+                <td>5. <b>Microsoft Store:</b> You can access and download apps from the Microsoft Store in both Home and Pro editions, but Home editions may have certain restrictions in terms of app management for system administrators.</td>
+                <td>5. <b>Group Policy:</b> Pro editions provide more extensive Group Policy settings, allowing administrators to configure and control various aspects of the operating system.</td>
+            </tr>
+            <tr>
+                <td>6. <b>No BitLocker:</b> Home editions do not include BitLocker encryption, so if you need full-disk encryption, you'd need to use third-party software.</td>
+                <td>6. <b>Hyper-V:</b> Hyper-V is a virtualization platform that comes with Pro editions, enabling users to run virtual machines on their Windows systems.</td>
+            </tr>
+            <tr>
+                <td>7. <b>No Remote Desktop Host:</b> While you can use Remote Desktop to connect to other devices in Home editions, you cannot use your system as a Remote Desktop host (server).</td>
+                <td></td>
+            </tr>
+        </table>
+        <p>So, from the comparision we can say that, windows Pro is the more featured edition than the Home. It has the all features from home including Hyper-V, Remote Desktops etc. So, lets see how can we upgrade to Pro for free.<br>
+            For this we will be using cmd(windows command prompt). So 1st open the cmd window with adminstrator privileges.
+            <div class="image1"><img src="Screenshot 2023-09-29 12521.png" alt="#image"></div>
+            Then Run these commands one by one:
+        </p>
+        <div class="code">
+            <p>
+                <code>dism /online /Get-TargetEditions</code><br>
+                <code>sc config LicenseManager start= auto & net start LicenseManager</code><br>
+                <code>sc config wuauserv start= auto & net start wuaserv</code><br>
+                <code>changepk.exe /productkey VK7JG-NPHTM-C97JM-9MPGT-3V66T</code><br>
+            </p>
+        </div>
+            <p>When input the last one and hit ENTER with for a second, the operator will start preparing the upgrade. Don’t turn off your PC. It will restart two times. Your Windows will upgrade successfully.<br>
+            <p><b>Note:</b> This tutorial work for both windows 10 and windows 11.</p>
+        </p>
+      </div>
+      <div class="footer">
+        <!--Footer-->
+   <footer>
+    <p>© 2023 by Md. Abirul Karim Sarkar. All rights reserved.</p>
+  </footer>
+  
+      </div>  
+</body>
+</html>
